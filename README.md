@@ -1,3 +1,3 @@
 # INTERFAZ II
-###Ejercicio n°1 Arduino: "Hola Mundo"
+### Ejercicio n°1 Arduino: "Hola Mundo"
 
