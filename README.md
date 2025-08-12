@@ -12,6 +12,7 @@ void loop() {
 }
 
 ```
+
 #### Ejercicio n° 2: Led intermirtente (Blink) 
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
@@ -25,8 +26,7 @@ void loop() {   // Se repite infinitamente
   delay(1000);             // Esperar 1 segundo
 }
 ```
-<a
-href=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>" Led Parpadeante.</a> 
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>LedParpadeante.png"/>
 
 #### Ejercicio n° 3: Control por Pulsador
 ```js
