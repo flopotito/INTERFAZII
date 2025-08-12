@@ -26,7 +26,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 <a
-href=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>"Led Parpadeante.</a>
+href=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>"Led Parpadeante.</a> 
 
 #### Ejercicio n° 3: Control por Pulsador
 ```js
