@@ -42,6 +42,7 @@ void loop() {
   }
 }
 ```
+
 #### Ejercicio n° 4: Led con Potenciómetro
 ```js
 void setup() {
@@ -53,6 +54,7 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>Potenciador.png/>
 
 #### Ejercicio n° 5: Semáforo en arduino 
 
