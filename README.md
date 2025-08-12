@@ -42,6 +42,7 @@ void loop() {
   }
 }
 ```
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>Pulsador.png/>
 
 #### Ejercicio n° 4: Led con Potenciómetro
 ```js
@@ -107,3 +108,4 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/SEM%C3%81FORO.png>Semaforo.png/>
