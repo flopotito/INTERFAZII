@@ -109,3 +109,49 @@ void loop() {
 }
 ```
 <img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/SEM%C3%81FORO.png>Semaforo.png/>
+
+#### Ejercicio n° 6: Led pulsador en processing
+```js
+import processing.serial.*;
+
+Serial myPort;
+ArrayList<PVector> circles; 
+
+void setup() {
+  size(1920, 1080);
+  background(0);
+  
+  // Ajusta el nombre del puerto según tu Arduino
+  println(Serial.list());
+ // myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+  
+  circles = new ArrayList<PVector>();
+}
+
+void draw() {
+  //background(0);
+  
+  // Dibujar círculos almacenados
+  fill(50, 400, 770);
+  //noStroke();
+  stroke(700, 300, 0);
+  for (PVector c : circles) {
+    ellipse(c.x, c.y, 300, 300);
+  }
+  
+  // Revisar si llega algo de Arduino
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n');
+    if (val != null) {
+      val = trim(val);
+      if (val.equals("1")) {
+        // Cada vez que se aprieta el botón, agregar un círculo en posición aleatoria
+        circles.add(new PVector(random(width), random(height)));
+      }
+    }
+  }
+}
+```
+
+
