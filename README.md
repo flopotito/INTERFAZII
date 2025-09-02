@@ -175,7 +175,7 @@ void loop() {
   }
 }
 
-#### Ejercicio n° 8: Pulsador con potenciometro en processing
+#### Ejercicio n° 8: Pulsador con potenciometro processing
 ```js
 import processing.serial.*;
 
