@@ -177,7 +177,6 @@ void loop() {
 
 #### Ejercicio n° 8: Pulsador con potenciometro en processing
 ```js
-
 import processing.serial.*;
 
 Serial myPort;
@@ -233,6 +232,7 @@ class CircleData {
     this.y = y;
     this.size = size;
   }
+ }
 ```
 
 
