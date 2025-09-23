@@ -175,6 +175,7 @@ void loop() {
     delay(200);               // debounce simple
   }
 }
+```
 
 #### Ejercicio n° 8: Pulsador con potenciometro processing
 ```js
