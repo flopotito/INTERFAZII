@@ -26,7 +26,7 @@ void loop() {   // Se repite infinitamente
   delay(1000);             // Esperar 1 segundo
 }
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>LedParpadeante.png"/>
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/BLINKER.png>
 
 #### Ejercicio n° 3: Control por Pulsador
 ```js
