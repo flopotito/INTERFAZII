@@ -153,7 +153,6 @@ void draw() {
     }
   }
 ```
-
 <img scr=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>PULSADOR.png/>
 
 
