@@ -153,7 +153,7 @@ void draw() {
     }
   }
 ```
-<img scr=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>
+<img scr="https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png">
 
 
 #### Ejercicio n° 7: Pulsador con potenciometro 
