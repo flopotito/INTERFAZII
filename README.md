@@ -43,7 +43,7 @@ void loop() {
   }
 }
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>PulsadOR.png"/>
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>Pulsador.png"/>
 
 #### Ejercicio n° 4: Led con Potenciómetro
 ```js
