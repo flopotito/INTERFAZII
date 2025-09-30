@@ -56,7 +56,7 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>Potenciador.png/>
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
 
 #### Ejercicio n° 5: Semáforo en arduino 
 
@@ -109,7 +109,7 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/SEM%C3%81FORO.png>Semaforo.png/>
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/SEM%C3%81FORO.png>
 
 #### Ejercicio n° 6: Led pulsador en processing
 ```js
@@ -153,7 +153,7 @@ void draw() {
     }
   }
 ```
-<img scr=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>PULSADOR.png/>
+<img scr=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png>
 
 
 #### Ejercicio n° 7: Pulsador con potenciometro 
