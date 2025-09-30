@@ -112,6 +112,7 @@ void loop() {
 <img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/SEM%C3%81FORO.png>
 
 #### Ejercicio n° 6: Led pulsador en processing
+
 ```js
 import processing.serial.*;
 
@@ -153,7 +154,7 @@ void draw() {
     }
   }
 ```
-<img scr=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/PULSADOR.png/>
+
 
 
 #### Ejercicio n° 7: Pulsador con potenciometro 
