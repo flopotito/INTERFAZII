@@ -56,7 +56,7 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>Potenciador.png/>
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png/>
 
 #### Ejercicio n° 5: Semáforo en arduino 
 
