@@ -315,6 +315,17 @@ void loop() {
   delay(10);
 }
 ```
+#### Ejercicio Presentacion "Led con Potenciometro"
+```js
+
+void setup() {
+  pinMode(13, OUTPUT);  // Pin PWM (símbolo ~)
+}
+void loop() {
+  int valor = analogRead(A0);           // Leer potenciómetro (0-1023)
+  int brillo = map(valor, 0, 1023, 0, 255);  // Convertir a rango PWM
+  analogWrite(13, brillo);               // Ajustar brillo
+}
 
 
 
