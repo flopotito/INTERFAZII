@@ -326,6 +326,7 @@ void loop() {
   int brillo = map(valor, 0, 1023, 0, 255);  // Convertir a rango PWM
   analogWrite(13, brillo);               // Ajustar brillo
 }
+´´´
 <img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
 
 
