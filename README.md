@@ -326,6 +326,24 @@ void loop() {
   int brillo = map(valor, 0, 1023, 0, 255);  // Convertir a rango PWM
   analogWrite(13, brillo);               // Ajustar brillo
 }
+           otra version
+int ledPin = 13;
+int potPin = A0;
+
+void setup() {
+pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+int valor = analogRead(potPin);
+int velocidad = map(valor, 0, 1023, 50, 500); // controla la velocidad del parpadeo
+
+digitalWrite(ledPin, HIGH);
+delay(velocidad);
+digitalWrite(ledPin, LOW);
+delay(velocidad);
+}
+
 ```
 <img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
 
