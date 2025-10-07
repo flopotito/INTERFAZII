@@ -326,7 +326,13 @@ void loop() {
   int brillo = map(valor, 0, 1023, 0, 255);  // Convertir a rango PWM
   analogWrite(13, brillo);               // Ajustar brillo
 }
-           otra version
+
+
+```
+<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
+
+#### Ejercicio Presentacion "Led con Potenciometro" VERSION DOS
+```js
 int ledPin = 13;
 int potPin = A0;
 
@@ -343,9 +349,8 @@ delay(velocidad);
 digitalWrite(ledPin, LOW);
 delay(velocidad);
 }
-
 ```
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
+
 
 
 
