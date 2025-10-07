@@ -327,8 +327,7 @@ void loop() {
   analogWrite(13, brillo);               // Ajustar brillo
 }
 ´´´
-<img src=https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
-
+<img scr= https://raw.githubusercontent.com/flopotito/INTERFAZII/refs/heads/main/img/POTENCIADOR.png>
 
 
 
