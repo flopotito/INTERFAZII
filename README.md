@@ -463,6 +463,16 @@ void calcAverage(float t) {
 }
 
 ```
+### Ejercicio Proyecto 
+
+```
+descripción técnica:
+Nuestro proyecto consiste en generar una transición de imágenes en un espacio reconocido de Santiago, como lo es Plaza de Armas, serán en tiempos distintos pero el mismo lugar, para visualizar cómo cambia el espacio solo con los agentes que interactúan con él.
+
+marco teórico: 
+La idea del proyecto surge por medio de la necesidad de ver un cambio o un reconocimiento de un espacio altamente recurrido y como este se transforma dentro del día, todos los días. Surge también por una necesidad de entender, de comprender al otro, al entorno y a uno mismo por medio de los diferentes escenarios que pueden ocurrir en un mismo espacio que de por sí posee una identidad personal predominante.
+Este mismo proyecto se puede expandir a medida de que el tiempo pase ya que la misma idea puede lograrse a través de las diferentes épocas del año.
+
 
 
 
