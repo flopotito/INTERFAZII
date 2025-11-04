@@ -466,20 +466,73 @@ void calcAverage(float t) {
 ### Ejercicio Proyecto 
 
 ```
-descripción técnica:
-Nuestro proyecto consiste en generar una transición de imágenes en un espacio reconocido de Santiago, como lo es Plaza de Armas, serán en tiempos distintos pero el mismo lugar, para visualizar cómo cambia el espacio solo con los agentes que interactúan con él.
+import processing.serial.*;
 
-marco teórico: 
-La idea del proyecto surge por medio de la necesidad de ver un cambio o un reconocimiento de un espacio altamente recurrido y como este se transforma dentro del día, todos los días.
-Surge también por una necesidad de entender, de comprender al otro, al entorno y a uno mismo por medio de los diferentes escenarios que pueden ocurrir en un mismo espacio que de por sí posee una identidad personal predominante.
-Este mismo proyecto se puede expandir a medida de que el tiempo pase ya que la misma idea puede lograrse a través de las diferentes épocas del año.
+Serial myPort;
+PImage[] imgs;
+int numImages = 3;
+PImage avgImg;
+float mixAmount = 0;
 
+void setup() {
+  size(800, 600);
+  println(Serial.list());
+  
+  //Cambia el índice según tu puerto (0, 1, 2, etc.)
+  myPort = new Serial(this, Serial.list()[0], 9600);
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort.bufferUntil('\n');
 
+  // Cargar imágenes
+  imgs = new PImage[numImages];
+  imgs[0] = loadImage("img1.jpg");
+  imgs[1] = loadImage("img2.jpg");
+  imgs[2] = loadImage("img3.jpg");
 
+  avgImg = createImage(imgs[0].width, imgs[0].height, RGB);
+}
 
+void draw() {
+  // Dibujar la imagen promedio según el valor del potenciómetro
+  background(0);
+  calcAverage(mixAmount);
+  image(avgImg, 0, 0, width, height);
+  
+  fill(255);
+  textSize(20);
+  text("Mezcla: " + nf(mixAmount, 1, 2), 20, height - 20);
+}
 
+void serialEvent(Serial p) {
+  String val = p.readStringUntil('\n');
+  if (val != null) {
+    val = trim(val);
+    float sensor = float(val);
+    mixAmount = map(sensor, 0, 1023, 0, 1); // 0 a 1
+  }
+}
 
+void calcAverage(float t) {
+  avgImg.loadPixels();
 
+  for (int i = 0; i < avgImg.pixels.length; i++) {
+    color c1 = imgs[0].pixels[i];
+    color c2 = imgs[1].pixels[i];
+    color c3 = imgs[2].pixels[i];
 
+    // Promedio ponderado según el potenciómetro
+    float r = red(c1)*(1-t) + red(c2)*t*0.5 + red(c3)*t*0.5;
+    float g = green(c1)*(1-t) + green(c2)*t*0.5 + green(c3)*t*0.5;
+    float b = blue(c1)*(1-t) + blue(c2)*t*0.5 + blue(c3)*t*0.5;
 
+    avgImg.pixels[i] = color(r, g, b);
+  }
+  avgImg.updatePixels();
+}
 
+Nuestro proyecto consiste en generar una transición de imágenes en un espacio personal y
+cotidiano, serán en tiempos distintos pero el mismo lugar, para visualizar cómo cambia el
+espacio solo con los agentes que interactúan con él.
+Las imagenes son de autoria propia. La idea del proyecto surge gracias a la necesidad de percibir un espacio quieto y ver como se transform, a traves del tiempo.
+
+```
