@@ -508,7 +508,7 @@ void serialEvent(Serial p) {
   if (val != null) {
     val = trim(val);
     float sensor = float(val);
-    mixAmount = map(sensor, 0, 1023, 0, 1); // 0 a 1
+    mixAmount = map(sensor, 0, 800, 0, 1); // 0 a 1
   }
 }
 
