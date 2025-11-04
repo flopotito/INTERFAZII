@@ -533,6 +533,5 @@ void calcAverage(float t) {
 Nuestro proyecto consiste en generar una transición de imágenes en un espacio personal y
 cotidiano, serán en tiempos distintos pero el mismo lugar, para visualizar cómo cambia el
 espacio solo con los agentes que interactúan con él.
-Las imagenes son de autoria propia. La idea del proyecto surge gracias a la necesidad de percibir un espacio quieto y ver como se transform, a traves del tiempo.
-
+Las imagenes son de autoria propia
 ```
